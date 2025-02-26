@@ -42,18 +42,33 @@ nav a {
     font-size: 40px;
     background: rgba(0, 0, 0, 0.0);
     padding: 10px;
-    color: white;
+    color: #DED7C7;
+}
+
+.intro-text {
+    font-size: 30px;
 }
 
 /* Painike */
 .button {
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 50px;
     padding: 10px 20px;
     background-color: #5B4B3F;
-    color: white;
+    color: #DED7C7;
+    font-size: 20px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+/* Koristeviiva */
+hr.divider {
+    border: 0;
+    height: 2px;
+    background-color: #DED7C7;
+    margin: 20px 30px;
+    /* Lisää väliä viivan ja muiden osioiden väliin */
 }
 
 /* Kuvakortit */
@@ -103,40 +118,32 @@ nav a {
 /* Alatunniste */
 footer {
     display: flex;
-    /* Käytetään flexboxia */
     flex-wrap: wrap;
-    /* Sallii elementtien siirtymisen uudelle riville tarvittaessa */
-    justify-content: space-between;
-    /* Välittää h3-otsikot tasaisesti */
+    /Elementit voi siirty toiselle riville tarvittaessa justify-content: space-between;
     padding: 20px;
     background-color: #5B4B3F;
-    /* Taustaväri */
+
 }
 
 footer>h3 {
     margin: 0 20px 10px 0;
-    /* Lisätään väli h3-otsikoiden väliin */
-    font-size: 1.2em;
-    /* Muutetaan fonttikokoa tarvittaessa */
+    font-size: 1.2em;/voi muuttaa fonttikokoa tarvittaessa
 }
 
 footer>p {
     margin: 0 20px 20px 0;
-    /* Lisätään väli p-elementtien väliin */
     flex-basis: 100%;
-    /* Tekstit menevät aina uuden rivin alkuun */
+
 }
 
 footer>div {
     flex: 1;
-    /* Antaa kullekin osalle tarvittavan tilan */
     display: flex;
     flex-direction: column;
 }
 
 footer p:last-child {
     width: 100%;
-    /* Copyright-teksti vie koko rivin */
     text-align: center;
-    /* Keskitetään Copyright-teksti */
+
 }
