@@ -58,18 +58,85 @@ nav a {
 
 /* Kuvakortit */
 .content {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;/pystysuuntainen asettelu gap: 40 px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.content img {
-    width: 80%;
-    max-width: 600px;
-    border-radius: 10px;
+.card {
+    display: flex;
+    align-items: center;
+    gap: 20px;/Väli kuvan ja tekstin välillä margin-left: 20px;
+    margin-right: 20px;
+    padding: 5%;
 }
+
+.card img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+
+.card .text {
+    flex: 1;
+}
+
+.card h2 {
+    margin-bottom: 0 px;
+}
+
+.card p {
+    margin-top: 50;
+}
+
+
+.reverse {
+    flex-direction: row-reverse;/Järjestyksen kääntäminen
+}
+
+
+
 
 /* Alatunniste */
 footer {
-    background-color: #5B4B3F;
+    display: flex;
+    /* Käytetään flexboxia */
+    flex-wrap: wrap;
+    /* Sallii elementtien siirtymisen uudelle riville tarvittaessa */
+    justify-content: space-between;
+    /* Välittää h3-otsikot tasaisesti */
     padding: 20px;
-    margin-top: 20px;
+    background-color: #5B4B3F;
+    /* Taustaväri */
+}
+
+footer>h3 {
+    margin: 0 20px 10px 0;
+    /* Lisätään väli h3-otsikoiden väliin */
+    font-size: 1.2em;
+    /* Muutetaan fonttikokoa tarvittaessa */
+}
+
+footer>p {
+    margin: 0 20px 20px 0;
+    /* Lisätään väli p-elementtien väliin */
+    flex-basis: 100%;
+    /* Tekstit menevät aina uuden rivin alkuun */
+}
+
+footer>div {
+    flex: 1;
+    /* Antaa kullekin osalle tarvittavan tilan */
+    display: flex;
+    flex-direction: column;
+}
+
+footer p:last-child {
+    width: 100%;
+    /* Copyright-teksti vie koko rivin */
+    text-align: center;
+    /* Keskitetään Copyright-teksti */
 }
