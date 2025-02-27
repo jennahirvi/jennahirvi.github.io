@@ -153,7 +153,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     background-color: #5B4B3F;
 
 }
@@ -179,4 +179,96 @@ footer p:last-child {
     width: 100%;
     text-align: center;
 
+}
+
+/* Mobiiliversio (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        /* Tekstin koon pienentäminen mobiililaitteilla */
+        padding: 0 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .hero-text {
+        font-size: 35px;
+        /* Pienennetään tekstin kokoa */
+        padding: 5px;
+    }
+
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card {
+        flex-direction: column;
+        padding: 10px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+    .button {
+        font-size: 24px;
+        padding: 8px 16px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .button-container {
+        padding-bottom: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer>div {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    footer p:last-child {
+        margin-top: 20px;
+    }
+
+    footer h3 {
+        font-size: 1.1em;
+    }
+
+    /* Hero kuvan koon muuttaminen. */
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
 }
