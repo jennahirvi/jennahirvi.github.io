@@ -36,7 +36,7 @@ nav a:hover {
     /* Läpikuultava taustaväri */
     border-radius: 5px;
     /* Pyöristetyt kulmat */
-    padding: 5px 10px;
+    padding: 1px 10px;
     /* Lisää tilaa ympärille */
 }
 
