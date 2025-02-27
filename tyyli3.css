@@ -207,25 +207,14 @@ footer a:hover {
             padding: 15px;
         }
 
-        nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 20px;
-        }
-
         nav a {
-            margin: 20px 0;
-            font-size: 18px;
+            margin: 10px 0;
         }
 
         .hero-text {
-            font-size: 8px;
+            font-size: 25px;
             /* Pienennetään tekstin kokoa */
             padding: 5px;
-            margin-bottom: 10px;
-            position: relative;
-
         }
 
         .content {
