@@ -31,8 +31,13 @@ nav a:hover {
 
 #valittu {
     color: #5B4B3F;
-    background-color: #DED7C7 (255, 235, 205, 0.6);
+    /* Tekstin väri */
+    background-color: rgba(255, 235, 205, 0.6);
+    /* Läpikuultava taustaväri */
     border-radius: 5px;
+    /* Pyöristetyt kulmat */
+    padding: 5px 10px;
+    /* Lisää tilaa ympärille */
 }
 
 /* Hero-osio */
@@ -181,94 +186,100 @@ footer p:last-child {
 
 }
 
-/* Mobiiliversio (max-width: 600px) */
-@media (max-width: 600px) {
-    body {
-        font-size: 16px;
-        /* Tekstin koon pienentäminen mobiililaitteilla */
-        padding: 0 10px;
-    }
+footer a:hover {
+    color: #5B4B3F;
+    /* Määritä haluttu väri hover-tilassa */
+    background-color: #DED7C7;
+    /* Määritä taustaväri hover-tilassa */
+    border-radius: 5px;
 
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
+    /* Mobiiliversio (max-width: 600px) */
+    @media (max-width: 600px) {
+        body {
+            font-size: 16px;
+            /* Tekstin koon pienentäminen mobiililaitteilla */
+            padding: 0 10px;
+        }
 
-    nav a {
-        margin: 10px 0;
-    }
+        header {
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+        }
 
-    .hero-text {
-        font-size: 35px;
-        /* Pienennetään tekstin kokoa */
-        padding: 5px;
-    }
+        nav a {
+            margin: 10px 0;
+        }
 
-    .content {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+        .hero-text {
+            font-size: 35px;
+            /* Pienennetään tekstin kokoa */
+            padding: 5px;
+        }
 
-    .card {
-        flex-direction: column;
-        padding: 10px 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
+        .content {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
-    .card img {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 15px;
-    }
+        .card {
+            flex-direction: column;
+            padding: 10px 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
 
-    .card h2 {
-        font-size: 24px;
-    }
+        .card img {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
 
-    .card p {
-        font-size: 14px;
-        margin-top: 10px;
-    }
+        .card h2 {
+            font-size: 24px;
+        }
 
-    .reverse {
-        flex-direction: column;
-    }
+        .card p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
 
-    .button {
-        font-size: 24px;
-        padding: 8px 16px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
+        .reverse {
+            flex-direction: column;
+        }
 
-    .button-container {
-        padding-bottom: 40px;
-    }
+        .button {
+            font-size: 24px;
+            padding: 8px 16px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
 
-    footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
+        .button-container {
+            padding-bottom: 40px;
+        }
 
-    footer>div {
-        flex: 1;
-        margin-bottom: 20px;
-    }
+        footer {
+            flex-direction: column;
+            text-align: center;
+            padding: 10px;
+        }
 
-    footer p:last-child {
-        margin-top: 20px;
-    }
+        footer>div {
+            flex: 1;
+            margin-bottom: 20px;
+        }
 
-    footer h3 {
-        font-size: 1.1em;
-    }
+        footer p:last-child {
+            margin-top: 20px;
+        }
 
-    /* Hero kuvan koon muuttaminen. */
-    .hero img {
-        width: 100%;
-        height: auto;
-    }
-}
+        footer h3 {
+            font-size: 1.1em;
+        }
+
+        /* Hero kuvan koon muuttaminen. */
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
