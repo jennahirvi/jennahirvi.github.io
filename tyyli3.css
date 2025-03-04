@@ -189,108 +189,106 @@ footer p:last-child {
 
 footer a:hover {
     color: #5B4B3F;
-    /* Määritä haluttu väri hover-tilassa */
-    background-color: #DED7C7;
-    /* Määritä taustaväri hover-tilassa */
+    / * */ background-color: #DED7C7;
+    /* */
     border-radius: 5px;
 
     /* Mobiiliversio (max-width: 600px) */
-    @media (max-width: 600px) {
-        body {
-            font-size: 16px;
-            /* Tekstin koon pienentäminen mobiililaitteilla */
-            padding: 0 10px;
-        }
+    @media (max-width: 600px) body {
+        font-size: 16px;
+        /* Tekstin koon pienentäminen mobiililaitteilla */
+        padding: 0 10px;
+    }
 
-        header {
-            flex-direction: column;
-            text-align: center;
-            padding: 15px;
-        }
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
 
-        nav a {
-            margin: 10px 0;
-        }
+    nav a {
+        margin: 10px 0;
+    }
 
-        .hero-text {
-            font-size: 20px;
-            /* Pienennetään tekstin kokoa */
-            padding: 5px;
-        }
+    .hero-text {
+        font-size: 20px;
+        /* Pienennetään tekstin kokoa */
+        padding: 5px;
+    }
 
-        .content {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+    .content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-        .card {
-            flex-direction: column;
-            padding: 10px 0;
-            margin-left: 0;
-            margin-right: 0;
-        }
+    .card {
+        flex-direction: column;
+        padding: 10px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-        .card img {
-            width: 100%;
-            max-width: 100%;
-            margin-bottom: 15px;
-        }
+    .card img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
 
-        .card h2 {
-            font-size: 24px;
-        }
+    .card h2 {
+        font-size: 24px;
+    }
 
-        .card p {
-            font-size: 14px;
-            margin-top: 10px;
-        }
+    .card p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
 
-        .reverse {
-            flex-direction: column;
-        }
+    .reverse {
+        flex-direction: column;
+    }
 
-        .button {
-            font-size: 24px;
-            padding: 8px 16px;
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
+    .button {
+        font-size: 24px;
+        padding: 8px 16px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
 
-        .button-container {
-            padding-bottom: 40px;
-        }
+    .button-container {
+        padding-bottom: 40px;
+    }
 
-        footer {
-            flex-direction: column;
-            text-align: center;
-            padding: 10px;
-        }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
 
-        footer>div {
-            flex: 1;
-            margin-bottom: 20px;
-        }
+    footer>div {
+        flex: 1;
+        margin-bottom: 20px;
+    }
 
-        footer p:last-child {
-            margin-top: 20px;
-        }
+    footer p:last-child {
+        margin-top: 20px;
+    }
 
-        footer h3 {
-            font-size: 1.1em;
-        }
+    footer h3 {
+        font-size: 1.1em;
+    }
 
-        /* Hero kuvan koon muuttaminen. */
-        .hero img {
-            width: 100%;
-            height: auto;
-        }
+    /*  kuvan koon muuttaminen. */
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
 
-        .kartta-container {
-            text-align: center;
-            /* Vaakasuuntainen keskitys */
-        }
+    .kartta-container {
+        text-align: center;
+        /* Vaakasuuntainen keskitys */
+    }
 
-        .kartta-container iframe {
-            margin: 0 auto;
-            /* Pystysuuntainen keskitys */
-        }
+    .kartta-container iframe {
+        margin: 0 auto;
+        /* Pystysuuntainen keskitys */
+    }
